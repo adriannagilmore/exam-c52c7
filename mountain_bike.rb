@@ -34,4 +34,8 @@ class MountainBike
     hourly_rate
   end
 
+  def total_cost(rate, luggageCost)
+    total_cost = rate + luggageCost
+  end
+
 end
