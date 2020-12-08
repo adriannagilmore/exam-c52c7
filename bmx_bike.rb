@@ -1,13 +1,13 @@
 
 class BmxBike
 
-  attr_reader :tail_pack, :weekly_price, :daily_price, :hourly_price
+  attr_reader :luggage, :weekly_rate, :daily_rate, :hourly_rate
 
-  def initialize(tail_pack)
-    @tail_pack = tail_pack
-    @weekly_price = 70
-    @daily_price = 20
-    @hourly_price = 5
+  def initialize(luggage)
+    @luggage = luggage #allows for any luggage to be passed in, started as tail_pack
+    @weekly_rate = 70
+    @daily_rate = 20
+    @hourly_rate = 5
   end
 
   def clean
@@ -18,20 +18,20 @@ class BmxBike
     puts "Adjusting seat..."
   end
 
-  def tail_pack
-    tail_pack
+  def luggage
+    luggage
   end
 
   def weekly_rate
-    weekly_price
+    weekly_rate
   end
 
   def daily_rate
-    daily_price
+    daily_rate
   end
 
   def hourly_rate
-    hourly_price
+    hourly_rate
   end
 
 end
