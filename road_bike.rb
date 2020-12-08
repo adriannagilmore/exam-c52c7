@@ -2,8 +2,8 @@ require_relative 'pannier'
 
 class RoadBike
 
-  attr_reader :luggage, :weekly_rate, :daily_rate, :hourly_rate
-  
+  attr_accessor :luggage, :weekly_rate, :daily_rate, :hourly_rate
+
   def initialize(luggageList)
     @luggage = luggageList #should be a list of luggage items, started as panniers
     @daily_rate = 15
@@ -22,15 +22,15 @@ class RoadBike
   end
 
   def weekly_rate
-    weekly_rate
+    weekly_rate = daily_rate * 7
   end
 
   def daily_rate
-    daily_rate
+    daily_rate 
   end
 
   def hourly_rate
-    hourly_rate
+    hourly_rate 
   end
 
 end
