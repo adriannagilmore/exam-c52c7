@@ -1,9 +1,10 @@
-require_relative 'roll_pack'
 
 class MountainBike
 
-  def initialize
-    @luggage = RollPack.new
+  attr_reader :luggage, :weekly_rate, :daily_rate, :hourly_rate
+
+  def initialize(roll_pack)
+    @luggage = roll_pack
     @weekly_rate = 90
     @daily_rate = 25
     @hourly_rate = 10
@@ -18,19 +19,19 @@ class MountainBike
   end
 
   def luggage
-    @luggage
+    luggage
   end
 
   def weekly_rate
-    @weekly_rate
+    weekly_rate
   end
 
   def daily_rate
-    @daily_rate
+    daily_rate
   end
 
   def hourly_rate
-    @hourly_rate
+    hourly_rate
   end
 
 end
