@@ -3,8 +3,8 @@ class MountainBike
 
   attr_reader :luggage, :weekly_rate, :daily_rate, :hourly_rate
 
-  def initialize(roll_pack)
-    @luggage = roll_pack
+  def initialize(luggage)
+    @luggage = luggage #this could be any kind of luggage but it started as roll_pack
     @weekly_rate = 90
     @daily_rate = 25
     @hourly_rate = 10
