@@ -2,8 +2,10 @@ require_relative 'pannier'
 
 class RoadBike
 
-  def initialize
-    @panniers = [Pannier.new, Pannier.new]
+  attr_reader :luggage, :weekly_rate, :daily_rate, :hourly_rate
+  
+  def initialize(luggageList)
+    @luggage = luggageList #should be a list of luggage items, started as panniers
     @daily_rate = 15
   end
 
@@ -15,12 +17,20 @@ class RoadBike
     puts "Lubricating gears..."
   end
 
-  def panniers
-    @panniers
+  def luggage
+    luggage
+  end
+
+  def weekly_rate
+    weekly_rate
   end
 
   def daily_rate
-    @daily_rate
+    daily_rate
+  end
+
+  def hourly_rate
+    hourly_rate
   end
 
 end
