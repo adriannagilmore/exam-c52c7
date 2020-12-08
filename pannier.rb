@@ -1,34 +1,19 @@
 
-
 class Pannier
 
-  def initialize
+  attr_accessor :price, :weight
+
+  def initialize(weight)
     @price = 3 # Set price. Flat rate per rental
+    @weight = weight
   end
 
-
-  # Get price
   def price
-    @price
+    price
   end
 
+  def weight
+    weight
   end
 
-
-
-  # def weight
-  #   @weight
-  # end
-
-
-
-
-
-
-
-
-
-
-
-
-
+end
